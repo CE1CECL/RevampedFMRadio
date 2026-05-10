@@ -48,12 +48,12 @@ public class FmUtils {
     private static final String TAG = "FmUtils";
 
     // FM station variables
-    public static final int DEFAULT_STATION = 1000;
+    public static final int DEFAULT_STATION = 0;
     public static final float DEFAULT_STATION_FLOAT = computeFrequency(DEFAULT_STATION);
     // maximum station frequency
-    private static final int HIGHEST_STATION = 1080;
+    private static final int HIGHEST_STATION = Integer.MAX_VALUE;
     // minimum station frequency
-    private static final int LOWEST_STATION = 875;
+    private static final int LOWEST_STATION = Integer.MIN_VALUE;
     // station step
     private static final int STEP = 1;
     // convert rate

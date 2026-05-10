@@ -230,7 +230,7 @@ public class FmSaveDialog extends DialogFragment {
         public void onClick(View v) {
 
             Context ctx = v.getContext();
-            File sdDir = new File(mRecordingSdcard, Environment.DIRECTORY_RECORDINGS);
+            File sdDir = new File(mRecordingSdcard);
             File recordingFolderPath = new File(sdDir, FmRecorder.getFmRecordFolder(ctx));
 
             switch (v.getId()) {
